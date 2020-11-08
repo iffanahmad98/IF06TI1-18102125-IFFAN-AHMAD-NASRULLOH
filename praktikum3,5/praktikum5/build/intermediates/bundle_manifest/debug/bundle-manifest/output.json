@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.iffan_18102125.praktikum5",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "BUNDLE_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0",
+        "outputFile": "praktikum5-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.iffan_18102125.praktikum5",
+        "split": "",
+        "minSdkVersion": "21"
+      }
+    }
+  ]
+}
