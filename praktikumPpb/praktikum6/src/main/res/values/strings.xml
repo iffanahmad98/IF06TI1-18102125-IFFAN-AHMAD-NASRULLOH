@@ -12,6 +12,18 @@
     <string-array name="data_name">
         <item>Wisata Pagubugan</item>
         <item>The Village Purwokerto</item>
+        <item>Taman Marvel Purwokerto</item>
+        <item>Taman DC Purwokerto</item>
+        <item>Purwokerto City Walk</item>
+        <item>Taman Skate Purwokerto</item>
+        <item>Purwokerto The Village</item>
+        <item>Rumah Hantu</item>
+        <item>ITT Purwokerto</item>
+        <item>Bakso Unsoed</item>
+        <item>Ayam Geprek Bae</item>
+        <item>Jembatan Warna</item>
+        <item>Alun-alun Purwokerto</item>
+        <item>Serayu View</item>
     </string-array>
     <string-array name="data_description">
  <item>Berada di lereng Gunung Slamet, wisata Pagubugan akan membawa Anda merasakan betapa
@@ -28,10 +40,40 @@ mencuri perhatian begitu melangkahkan kaki ke sini. Ada beragam aktivitas yang b
 sini: naik perahu mengitari kanal buatan di sekitar taman rekreasi, memberi makan aneka binatang
 (burung, kelinci, sapi, domba), menunggang kuda, foto-foto dengan kostum Belanda, dan masih banyak
 lagi!</item>
+        <item>Selain dikenal sebagai objek wisata, Central Park di Purwokerto kerap jadi langganan
+            tempat syuting film Avengers. Banyak juga film Hollywood ber-setting di sini.Dihimpun detikTravel,
+            Senin (7/5/2018), Central Park diketahui jadi setting dari film Avengers dan Avengers: Infinity War. Tidak heran,
+            soalnya markas Avengers diceritakan ada di Purwokerto</item>
+        <item>Serayu Park di Purwokerto kerap jadi langganan tempat syuting film DC. Banyak juga film Hollywood ber-setting di sini.Dihimpun detikTravel,
+            Senin (7/5/2018), Central Park diketahui jadi setting dari film Avengers dan Avengers: Infinity War. Tidak heran,
+            soalnya markas Avengers diceritakan ada di Purwokerto</item>
+        <item>Purwokerto City Walk Terletak Di jalan Dr.Angka dimana tempat ini sering menjadi tempat menongkrong muda-mudi
+        di purwokerto, biasanya ramai pada malam minggu</item>
+        <item>Salah satu kegiatan remaja di purwokerto adalah bermain skateboard, nah taman skate bisa kalian temukan di daerah andhang</item>
+        <item>Purwokerto The Village terletak di jalan kecamatan yang menuju ke arah baturaden</item>
+        <item>Ada salah satu rumah angker di purwokerto, terletak di daerah sumbang</item>
+        <item>ITT Purwokerto adalah kampus terbaik di purwokerto, banyak lulusan nya yang berhasil di bidang IT</item>
+        <item>Salah satu makanan favorit perantauan di purwokerto adalah Bakso Unsoed</item>
+        <item>Pengen Hedon Makanan? Ayam Geprek Bae Purwokerto solusinya, karena porsinya banyak banget!</item>
+        <item>Jembatan Warna yang kerap kali ramai pada sore hari terletak di sebelah alun-alun Purwokerto</item>
+        <item>Alun-Alun Purwokerto masih menjadi destinasi favorit di purwokerto</item>
+        <item>Ketika senja datang banyak para sepeda yang menikmati serayu view yang terletak di patikraja</item>
     </string-array>
     <string-array name="data_photo">
  <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/18-1-by-@miftakhulmukhasin-@hengki_pamungkas-740x294.jpg</item>
         <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2019/09/21-2-by-@The-Village-Purwokerto-740x740.jpg</item>
+        <item>https://non-indonesia-distribution.brta.in/2016-05/820x1000_0_0_820_1000_8711e20c9551c9620dd09e5b5c24c0d671faa3e0.jpg</item>
+        <item>https://cdnx2.kincir.com/production/2020-10/original_1366/d3a6367bd3ce32e857e8b775b679a850.jpg</item>
+        <item>https://i.pinimg.com/originals/c2/c6/b6/c2c6b678d667188a544fd5ac5f48f7b2.jpg</item>
+        <item>https://haho.co.id/media/wp-content/uploads/2017/07/Green-Skatepark-TMII-Wisata-Jakarta.jpg</item>
+        <item>https://travelspromo.com/wp-content/uploads/2019/04/The-Village-Baturaden-Purwokerto-Adien-Akhmad.jpg</item>
+        <item>https://m.ayosemarang.com/images-semarang/post/articles/2020/04/20/55642/ilustrasi-rumah-angker.jpg</item>
+        <item>https://ittelkom-pwt.ac.id/wp-content/uploads/2019/12/Gedung-Rektorat.jpg</item>
+        <item>https://2.bp.blogspot.com/-5Frdf4Grc1g/XRye-G9J1MI/AAAAAAAAoeo/YQ7izIZoGcM7KN06izwaDxuOUIA292P6gCLcBGAs/s1600/bakso-pekih-2.jpg</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/11/89/b1/36/ruang-makan-ayam-geprek.jpg</item>
+        <item>https://asset.kompas.com/crops/zNyWyokJtgo0b3a_mRg02zSNhSk=/0x0:739x493/750x500/data/photo/2020/09/01/5f4dff678e752.jpg</item>
+        <item>https://jejakpiknik.com/wp-content/uploads/2018/05/Alun-Alun-Purwokerto-2.jpg</item>
+        <item>https://1.bp.blogspot.com/-T3l1hJKphdQ/Xjf-1CR2q_I/AAAAAAAAFYU/4gRrbblGQN8qVhR9C503UbVHSmiseIIIwCLcBGAsYHQ/w1200-h630-p-k-no-nu/alamat-dan-harga-tiket-masuk-bukit-watu-meja-banyumas.jpg</item>
     </string-array>
 
 </resources>
