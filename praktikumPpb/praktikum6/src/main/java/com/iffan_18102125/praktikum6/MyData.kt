@@ -9,4 +9,7 @@ import kotlinx.android.parcel.Parcelize
         var name: String,
         var description: String,
         var photo: String
+        val lat: Double,
+        val lang: Double
+
     ) : Parcelable
