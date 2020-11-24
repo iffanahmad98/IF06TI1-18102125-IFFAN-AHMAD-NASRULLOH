@@ -39,7 +39,8 @@ class CardViewMyDataAdapter(private val listMyDatas: ArrayList<MyData>, val cont
                 val moveWithObjectIntent = Intent(context, DetailActivity::class.java)
                 moveWithObjectIntent.putExtra(DetailActivity.EXTRA_MYDATA, myData)
                 context.startActivity(moveWithObjectIntent)
-            } }
+            }
+        }
     }
     override fun getItemCount(): Int {
         return listMyDatas.size

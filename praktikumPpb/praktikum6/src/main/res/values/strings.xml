@@ -12,18 +12,18 @@
     <string-array name="data_name">
         <item>Wisata Pagubugan</item>
         <item>The Village Purwokerto</item>
-        <item>Taman Marvel Purwokerto</item>
-        <item>Taman DC Purwokerto</item>
-        <item>Purwokerto City Walk</item>
-        <item>Taman Skate Purwokerto</item>
-        <item>Purwokerto The Village</item>
-        <item>Rumah Hantu</item>
-        <item>ITT Purwokerto</item>
-        <item>Bakso Unsoed</item>
-        <item>Ayam Geprek Bae</item>
-        <item>Jembatan Warna</item>
-        <item>Alun-alun Purwokerto</item>
-        <item>Serayu View</item>
+        <item>Baturraden</item>
+        <item>Curug Ceheng</item>
+        <item>Curug Gede</item>
+        <item>Baturraden Adventure Forest</item>
+        <item>Curug Cipendok</item>
+        <item>Pemandian Kalibacin</item>
+        <item>Telaga Pucung</item>
+        <item>Batur Agung</item>
+        <item>Dreanland Park Pancasan</item>
+        <item>Crossworld Paintball</item>
+        <item>Depo Bay Depopelita</item>
+        <item>Goa Maria Kaliori</item>
     </string-array>
     <string-array name="data_description">
  <item>Berada di lereng Gunung Slamet, wisata Pagubugan akan membawa Anda merasakan betapa
@@ -40,48 +40,121 @@ mencuri perhatian begitu melangkahkan kaki ke sini. Ada beragam aktivitas yang b
 sini: naik perahu mengitari kanal buatan di sekitar taman rekreasi, memberi makan aneka binatang
 (burung, kelinci, sapi, domba), menunggang kuda, foto-foto dengan kostum Belanda, dan masih banyak
 lagi!</item>
-        <item>Selain dikenal sebagai objek wisata, Central Park di Purwokerto kerap jadi langganan
-            tempat syuting film Avengers. Banyak juga film Hollywood ber-setting di sini.Dihimpun detikTravel,
-            Senin (7/5/2018), Central Park diketahui jadi setting dari film Avengers dan Avengers: Infinity War. Tidak heran,
-            soalnya markas Avengers diceritakan ada di Purwokerto</item>
-        <item>Serayu Park di Purwokerto kerap jadi langganan tempat syuting film DC. Banyak juga film Hollywood ber-setting di sini.Dihimpun detikTravel,
-            Senin (7/5/2018), Central Park diketahui jadi setting dari film Avengers dan Avengers: Infinity War. Tidak heran,
-            soalnya markas Avengers diceritakan ada di Purwokerto</item>
-        <item>Purwokerto City Walk Terletak Di jalan Dr.Angka dimana tempat ini sering menjadi tempat menongkrong muda-mudi
-        di purwokerto, biasanya ramai pada malam minggu</item>
-        <item>Salah satu kegiatan remaja di purwokerto adalah bermain skateboard, nah taman skate bisa kalian temukan di daerah andhang</item>
-        <item>Purwokerto The Village terletak di jalan kecamatan yang menuju ke arah baturaden</item>
-        <item>Ada salah satu rumah angker di purwokerto, terletak di daerah sumbang</item>
-        <item>ITT Purwokerto adalah kampus terbaik di purwokerto, banyak lulusan nya yang berhasil di bidang IT</item>
-        <item>Salah satu makanan favorit perantauan di purwokerto adalah Bakso Unsoed</item>
-        <item>Pengen Hedon Makanan? Ayam Geprek Bae Purwokerto solusinya, karena porsinya banyak banget!</item>
-        <item>Jembatan Warna yang kerap kali ramai pada sore hari terletak di sebelah alun-alun Purwokerto</item>
-        <item>Alun-Alun Purwokerto masih menjadi destinasi favorit di purwokerto</item>
-        <item>Ketika senja datang banyak para sepeda yang menikmati serayu view yang terletak di patikraja</item>
+        <item>Tempat wisata di Purwokerto yang satu ini seolah sudah melegenda.
+Tak hanya populer tetapi juga menjadi favorit wisatawan baik lokal maupun domestik
+bahkan mancanegara. Baturaden menawarkan keindahan panorama alam disertai dengan
+beragam wahana permainan yang bisa dinikmati bersama keluarga.Terletak di lereng Gunung Slamet,
+Baturaden menyuguhkan hawa sejuk nan menyegarkan sehingga cocok sekali sebagai destinasi rekreasi
+ Anda bersama keluarga. Lokasi wisata ini juga mudah diakses dan tak jauh dari pusat kota,
+karena Anda hanya membutuhkan waktu kurang lebih 15 menit dari pusat kota Purwokerto ke tempat
+wisata Baturaden. Sebagai tempat wisata yang populer, banyak fasilitas yang disediakan
+di Baturaden, misalnya saja kolam renang, kolam luncur, sepeda air, dan juga pemandian air panas.
+Suatu paket wisata yang lengkap.</item>
+        <item>Ini dia tempat wisata di Purwokerto yang menyajikan keindahan panorama alam yang menakjubkan.
+Curug Ceheng merupakan salah satu wisata alam dengan daya tarik utamanya berupa air terjun.
+Tempat wisata ini terletak di Desa Gandatapa Kecamatan Sumbang. Keindahannya yang luar biasa
+ menjadikan setiap wisatawan yang mengunjunginya malas bahkan lupa pulang.</item>
+        <item>Curug Gede juga menyuguhkan keindahan pemandangan alam air terjun yang begitu mempesona.
+Tempat wisata di Purwokerto ini benar-benar pantang untuk dilewatkan dari daftar tujuan wisata Anda.
+Lokasinya tak jauh dari tempat wisata Baturaden, hanya berjarak kurang lebih 3 km.
+Jadi, jangan sampai menyesal karena tidak sempat singgah di tempat wisata yang satu ini.</item>
+        <item>Sesuai namanya, tempat wisata di Purwokerto ini berlokasi di kawasan wisata Baturaden.
+Banyak permainan yang menantang disuguhkan di sini, seperti mountain advanture, water adventure,
+tree adventure, dan eco adventure. Nah, bagi Anda yang suka bertualang, maka tempat wisata
+ini pastinya cocok untuk mengisi liburan bersama teman-teman atau keluarga Anda.</item>
+        <item>Bagai surga tersembunyi. Itulah ungkapan untuk menggambarkan tempat wisata di Purwokerto yang satu ini.
+Sebagai salah satu tempat wisata yang populer, Curug Cipendok telah dilengkapi dengan sarana prasarana
+memadai yang memudahkan wisatawan untuk menikmati keindahan alamnya. Lokasinya cukup jauh dari
+pusat kota Purwokerto, yakni berjarak sekitar 25 km, tepatnya berada di Desa Karangtengah, Cilongok,
+Banyumas.Keindahan alam yang masih sangat terjaga dengan buaian udara yang sejuk dan segar menjadi
+daya tarik utama dari tempat wisata ini. Tak hanya itu, Anda juga bisa mendapati suara-suara penghuni hutan
+seperti kera dan elang. Untuk urusan kuliner, Anda tak perlu khawatir, karena di lokasi ini telah banyak
+warung yang menjajakan susu murni dan makanan khas Purwokerto, yaitu tempe mendoan.</item>
+        <item>Pemandian Kalibacin menjadi salah satu tempat wisata di Purwokerto yang banyak dikunjungi wisatawan.
+Daya tarik utama dari tempat wisata ini adalah pemandian air hangat yang dipercaya sanggup
+menyembuhkan berbagai penyakit kulit, karena mengandung belerang.Lokasinya berada
+di Desa Tambaknegara, Kecamatan Rawalo.</item>
+        <item>Telaga Pucung merupakan tempat wisata di Purwokerto yang layak menjadi destinasi wisata keluarga.
+Dibandingkan dengan tempat wisata lainnya, Telaga Pucung tergolong baru karena belum lama diresmikan
+oleh pemerintah tahun 2005.Lokasi tempat wisata ini tak jauh dari Curug Cipendok, hanya berjarak
+sekitar 500 meter di sebelah barat. Telaga Pucung dikellilingi oleh hutan yang masih alami sebagai habitat
+dari elang dan harimau Jawa sebagai satwa yang tergolong langka.</item>
+        <item>Satu lagi tempat wisata di Purwokerto yang menyuguhkan paket wisata lengkap, Batur Agung.
+Tempat wisata ini memiliki beragam wahana permainan yang bisa Anda nikmati bersama keluarga atau
+teman-teman. Konsep yang diusung oleh tempat wisata ini adalah menyatu dengan alam.
+Nah, Anda bisa menikmati kesegaran dan kesejukan udara yang berlatar panorama alam yang indah.
+Tak hanya itu, Anda juga bisa menikmati berbagai permainan seperti ATV, flying fox, arung jeram,
+waterpark, kebun buah, kereta mini, dan juga situs purbakala. Tempat wisata ini berlokasi ini
+Kedungbanteng, Banyumas.</item>
+        <item>Ingin bermain air? Tempat wisata di Purwokerto ini bisa menjadi pilihan.
+Dream Land Park Pancasan terletak di Desa Pancasan, Kecamatan Ajibarang. Tempat wisata ini
+menyuguhkan wahana air yang seru berupa kolam renang, seluncuran, ember tumpah, sepeda air,
+dan kayak.Puas bermain air, Anda bisa menikmati taman reptil, taman unggas, dan juga taman batu
+alami berupa batu karts yang menyembul ke permukaan bumi.</item>
+        <item>Berwisata alam memang menyenangkan dan menenangkan. Namun, apabila Anda bosan
+dengan wisata alam, wisata yang satu ini bisa menjadi pilihan, Crossworld Paintball. Tempat
+wisata di Purwokerto ini menawarkan war game atau permainan perang-perangan.
+Nah, Anda bisa beraksi bak jagoan di film-film Hollywood. Untuk menikmati wisata ini tentu Anda harus
+berkunjung bersama dengan rombongan.Tempat wisata ini terletak di Jalan Ringin Tirto No. 69. Selain
+paintball, di tempat wisata ini Anda juga bisa menikmati permainan bilyar dan sajian di mini food court.</item>
+        <item>Bermain air memang tidak ada matinya, selalu menyenangkan dan mengesankan.
+Depo Bay Depo Pelita yang terletak di Jalan Menteri Supeno No. 10 Sokaraja menjadi salah
+satu tempat wisata di Purwokerto yang pantang untuk Anda lewatkan.Tempat wisata ini tak hanya
+menjadi magnet bagi destinasi wisata, tetapi juga belanja dan kuliner. Tempat wisata air ini dilengkapi
+dengan berbagai wahana permainan mulai dari anak-anak hingga dewasa.</item>
+        <item>Tempat wisata di Purwokerto yang satu ini merupakan tempat wisata religi bagi umat nasrani.
+ Goa Maria Kaliori menempati area seluas 5,6 hektar yang telah dilengkapi dengan beragam
+ fasilitas seperti pendopo untuk beristirahat, gereja, dan bangku-bangku taman.
+Untuk mengunjungi tempat wisata ini, Anda harus menempuh jarak 20 km dari pusat kota Purwokerto.
+</item>
     </string-array>
     <string-array name="data_photo">
         <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/18-1-by-@miftakhulmukhasin-@hengki_pamungkas-740x294.jpg</item>
         <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2019/09/21-2-by-@The-Village-Purwokerto-740x740.jpg</item>
-        <item>https://non-indonesia-distribution.brta.in/2016-05/820x1000_0_0_820_1000_8711e20c9551c9620dd09e5b5c24c0d671faa3e0.jpg</item>
-        <item>https://cdnx2.kincir.com/production/2020-10/original_1366/d3a6367bd3ce32e857e8b775b679a850.jpg</item>
-        <item>https://i.pinimg.com/originals/c2/c6/b6/c2c6b678d667188a544fd5ac5f48f7b2.jpg</item>
-        <item>https://haho.co.id/media/wp-content/uploads/2017/07/Green-Skatepark-TMII-Wisata-Jakarta.jpg</item>
-        <item>https://travelspromo.com/wp-content/uploads/2019/04/The-Village-Baturaden-Purwokerto-Adien-Akhmad.jpg</item>
-        <item>https://m.ayosemarang.com/images-semarang/post/articles/2020/04/20/55642/ilustrasi-rumah-angker.jpg</item>
-        <item>https://ittelkom-pwt.ac.id/wp-content/uploads/2019/12/Gedung-Rektorat.jpg</item>
-        <item>https://2.bp.blogspot.com/-5Frdf4Grc1g/XRye-G9J1MI/AAAAAAAAoeo/YQ7izIZoGcM7KN06izwaDxuOUIA292P6gCLcBGAs/s1600/bakso-pekih-2.jpg</item>
-        <item>https://media-cdn.tripadvisor.com/media/photo-s/11/89/b1/36/ruang-makan-ayam-geprek.jpg</item>
-        <item>https://asset.kompas.com/crops/zNyWyokJtgo0b3a_mRg02zSNhSk=/0x0:739x493/750x500/data/photo/2020/09/01/5f4dff678e752.jpg</item>
-        <item>https://jejakpiknik.com/wp-content/uploads/2018/05/Alun-Alun-Purwokerto-2.jpg</item>
-        <item>https://1.bp.blogspot.com/-T3l1hJKphdQ/Xjf-1CR2q_I/AAAAAAAAFYU/4gRrbblGQN8qVhR9C503UbVHSmiseIIIwCLcBGAsYHQ/w1200-h630-p-k-no-nu/alamat-dan-harga-tiket-masuk-bukit-watu-meja-banyumas.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/baturaden-tempat-wisata-di-Purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/curug-ceheng-purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/curug-gede-purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/baturaden-adventure-point-purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/Curug-Cipendok-purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/Pemandian-Kalibacin-purwokerto-banyumas-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/telaga-pucung-purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/batur-agung-purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/Dream-Land-Park-Pancasan-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/crossworld-paintball-purwokerto-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/Depo-Bay-Depo-Pelita-1.jpg</item>
+        <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/goa-maria-kaliori-purwokerto-1.jpg</item>
     </string-array>
     <string-array name="data_lat">
-        <item>-7.333797</item>
-        <item>-7.374473</item>
+        <item>-7.333625</item>
+        <item>-7.374458</item>
+        <item>-7.313178</item>
+        <item>-7.323564</item>
+        <item>-7.326279</item>
+        <item>-7.307153</item>
+        <item>-7.337119</item>
+        <item>-7.513617</item>
+        <item>-7.336801</item>
+        <item>-7.340204</item>
+        <item>-7.423017</item>
+        <item>-7.391549</item>
+        <item>-7.459483</item>
+        <item>-7.495207</item>
     </string-array>
     <string-array name="data_lang">
-        <item>109.206959</item>
-        <item>109.240532</item>
+        <item>109.207702</item>
+        <item>109.240504</item>
+        <item>109.229049</item>
+        <item>109.264073</item>
+        <item>109.220676</item>
+        <item>109.241814</item>
+        <item>109.136580</item>
+        <item>109.152324</item>
+        <item>109.137292</item>
+        <item>109.185394</item>
+        <item>109.075272</item>
+        <item>109.244185</item>
+        <item>109.281220</item>
+        <item>109.306935</item>
     </string-array>
     <string name="title_activity_detail">ScrollingActivity</string>
     <string name="large_text">
