@@ -1,10 +1,9 @@
 package com.iffan_18102125.praktikum6
 
 import android.app.Activity
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Parcelable
-
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -14,21 +13,22 @@ import com.google.android.gms.maps.model.MarkerOptions
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
-
     private lateinit var mMap: GoogleMap
     companion object {
         const val EXTRA_MYDATA = "extra_mydata"
     }
+    val myData by getParcelableExtra<MyData>(DetailActivity.EXTRA_MYDATA)
     inline fun <reified T : Parcelable> Activity.getParcelableExtra(key: String) = lazy {
         intent.getParcelableExtra<T>(key)
     }
-    val myData by getParcelableExtra<MyData>(DetailActivity.EXTRA_MYDATA)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
         supportActionBar?.title = myData?.name.toString()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
@@ -38,7 +38,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         onBackPressed()
         return true
     }
-
 
     /**
      * Manipulates the map once available.
@@ -58,5 +57,4 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 16.0f))
 
     }
-
 }

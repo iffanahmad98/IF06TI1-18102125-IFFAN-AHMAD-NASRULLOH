@@ -124,9 +124,9 @@ Untuk mengunjungi tempat wisata ini, Anda harus menempuh jarak 20 km dari pusat 
         <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/Depo-Bay-Depo-Pelita-1.jpg</item>
         <item>https://www.nativeindonesia.com/wp-content/uploads/2016/07/goa-maria-kaliori-purwokerto-1.jpg</item>
     </string-array>
-    <string-array name="data_lat">
-        <item>-7.333625</item>
-        <item>-7.374458</item>
+    <string-array name="data_lang">
+        <item>-7.333797</item>
+        <item>-7.374473</item>
         <item>-7.313178</item>
         <item>-7.323564</item>
         <item>-7.326279</item>
@@ -140,9 +140,9 @@ Untuk mengunjungi tempat wisata ini, Anda harus menempuh jarak 20 km dari pusat 
         <item>-7.459483</item>
         <item>-7.495207</item>
     </string-array>
-    <string-array name="data_lang">
-        <item>109.207702</item>
-        <item>109.240504</item>
+    <string-array name="data_lat">
+        <item>109.206959</item>
+        <item>109.240532</item>
         <item>109.229049</item>
         <item>109.264073</item>
         <item>109.220676</item>
