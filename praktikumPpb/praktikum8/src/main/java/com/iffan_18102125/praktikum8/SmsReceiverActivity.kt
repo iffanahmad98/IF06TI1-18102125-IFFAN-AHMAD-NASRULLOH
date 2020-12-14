@@ -2,6 +2,7 @@ package com.iffan_18102125.praktikum8
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_sms_receiver.*
 
 class SmsReceiverActivity : AppCompatActivity() {
     companion object {
@@ -11,5 +12,11 @@ class SmsReceiverActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sms_receiver)
+        title = getString(R.string.incoming_message)
+        val senderNo = intent.getStringExtra(EXTRA_SMS_NO)
+        val senderMessage = intent.getStringExtra(EXTRA_SMS_MESSAGE)
+        tv_from.text = getString(R.string.coming_from)+": "+senderNo
+        tv_message.text = senderMessage
+        btn_close.setOnClickListener { finish() }
     }
 }
