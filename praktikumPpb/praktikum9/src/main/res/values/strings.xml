@@ -21,4 +21,8 @@
     <string name="field_required">Kolom Tidak Boleh Kosong</string>
     <string name="email_is_not_valid">Email Tidak Valid</string>
     <string name="field_digit_only">Kolom Hanya Untuk Angka</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="kota_tinggal">Kota Tinggal</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="city">Kota Tinggal</string>
 </resources>
