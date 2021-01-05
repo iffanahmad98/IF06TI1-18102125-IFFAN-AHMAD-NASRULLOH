@@ -10,7 +10,13 @@ import com.iffan_18102125.praktikum10.adapter.QuoteAdapter
 import com.iffan_18102125.praktikum10.data.Quote
 import com.iffan_18102125.praktikum10.databinding.ActivityMainBinding
 import com.iffan_18102125.praktikum10.db.QuoteHelper
+import com.iffan_18102125.praktikum10.helper.EXTRA_POSITION
+import com.iffan_18102125.praktikum10.helper.EXTRA_QUOTE
 import com.iffan_18102125.praktikum10.helper.REQUEST_ADD
+import com.iffan_18102125.praktikum10.helper.REQUEST_UPDATE
+import com.iffan_18102125.praktikum10.helper.RESULT_ADD
+import com.iffan_18102125.praktikum10.helper.RESULT_DELETE
+import com.iffan_18102125.praktikum10.helper.RESULT_UPDATE
 import com.iffan_18102125.praktikum10.helper.mapCursorToArrayList
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
@@ -73,6 +79,35 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSnackbarMessage(message: String) {
         Snackbar.make(binding.rvQuotes, message, Snackbar.LENGTH_SHORT).show()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (data != null) {
+            when (requestCode) {
+                REQUEST_ADD -> if (resultCode == RESULT_ADD) {
+                    val quote = data.getParcelableExtra<Quote>(EXTRA_QUOTE) as Quote
+                    adapter.addItem(quote)
+                    binding.rvQuotes.smoothScrollToPosition(adapter.itemCount - 1)
+                    showSnackbarMessage("Satu item berhasil ditambahkan")
+                }
+                REQUEST_UPDATE ->
+                    when (resultCode) {
+                        RESULT_UPDATE -> {
+                            val quote = data.getParcelableExtra<Quote>(EXTRA_QUOTE) as Quote
+                            val position = data.getIntExtra(EXTRA_POSITION, 0)
+                            adapter.updateItem(position, quote)
+                            binding.rvQuotes.smoothScrollToPosition(position)
+                            showSnackbarMessage("Satu item berhasil diubah")
+                        }
+                        RESULT_DELETE -> {
+                            val position = data.getIntExtra(EXTRA_POSITION, 0)
+                            adapter.removeItem(position)
+                            showSnackbarMessage("Satu item berhasil dihapus")
+                        }
+                    }
+            }
+        }
     }
 
 }
