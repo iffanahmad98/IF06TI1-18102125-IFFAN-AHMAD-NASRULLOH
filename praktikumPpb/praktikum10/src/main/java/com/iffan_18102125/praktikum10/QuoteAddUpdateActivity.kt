@@ -3,19 +3,25 @@ package com.iffan_18102125.praktikum10
 import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.iffan_18102125.praktikum10.data.Quote
 import com.iffan_18102125.praktikum10.databinding.ActivityQuoteAddUpdateBinding
 import com.iffan_18102125.praktikum10.db.DatabaseContract
 import com.iffan_18102125.praktikum10.db.DatabaseContract.QuoteColumns.Companion.DATE
 import com.iffan_18102125.praktikum10.db.QuoteHelper
+import com.iffan_18102125.praktikum10.helper.ALERT_DIALOG_CLOSE
+import com.iffan_18102125.praktikum10.helper.ALERT_DIALOG_DELETE
 import com.iffan_18102125.praktikum10.helper.EXTRA_POSITION
 import com.iffan_18102125.praktikum10.helper.EXTRA_QUOTE
 import com.iffan_18102125.praktikum10.helper.RESULT_ADD
+import com.iffan_18102125.praktikum10.helper.RESULT_DELETE
 import com.iffan_18102125.praktikum10.helper.RESULT_UPDATE
 import com.iffan_18102125.praktikum10.helper.categoryList
 import com.iffan_18102125.praktikum10.helper.getCurrentDate
@@ -114,5 +120,55 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        if (isEdit) {
+            menuInflater.inflate(R.menu.menu_form, menu)
+        }
+        return super.onCreateOptionsMenu(menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_delete -> showAlertDialog(ALERT_DIALOG_DELETE)
+            android.R.id.home -> showAlertDialog(ALERT_DIALOG_CLOSE)
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun showAlertDialog(type: Int) {
+        val isDialogClose = type == ALERT_DIALOG_CLOSE
+        val dialogTitle: String
+        val dialogMessage: String
+        if (isDialogClose) {
+            dialogTitle = "Batal"
+            dialogMessage = "Apakah anda ingin membatalkan perubahan pada form?"
+        } else {
+            dialogMessage = "Apakah anda yakin ingin menghapus item ini?"
+            dialogTitle = "Hapus Quote"
+        }
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle(dialogTitle)
+        alertDialogBuilder
+            .setMessage(dialogMessage)
+            .setCancelable(false)
+            .setPositiveButton("Ya") { _, _ ->
+                if (isDialogClose) {
+                    finish()
+                } else {
+                    val result = quoteHelper.deleteById(quote?.id.toString()).toLong()
+                    if (result > 0) {
+                        val intent = Intent()
+                        intent.putExtra(EXTRA_POSITION, position)
+                        setResult(RESULT_DELETE, intent)
+                        finish()
+                    } else {
+                        Toast.makeText(this@QuoteAddUpdateActivity, "Gagal menghapus data", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+            .setNegativeButton("Tidak") { dialog, _ -> dialog.cancel() }
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
     }
 }
