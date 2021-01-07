@@ -34,7 +34,9 @@ class QuoteAdapter(private val activity: Activity):
         fun bind(quote: Quote, position: Int) {
             binding.tvItemTitle.text = quote.title
             binding.tvItemCategory.text = categoryList[quote.category!!.toInt()]
+            binding.tvItemTahun.text = quote.tahun
             binding.tvItemDate.text = quote.date
+            binding.tvItemBy.text = quote.by
             binding.tvItemDescription.text = quote.description
 
             binding.cvItemQuote.setOnClickListener{

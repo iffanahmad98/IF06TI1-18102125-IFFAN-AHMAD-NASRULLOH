@@ -10,7 +10,9 @@ internal class DatabaseContract {
             const val TITLE = "title"
             const val DESCRIPTION = "description"
             const val CATEGORY = "category"
+            const val TAHUN = "tahun"
             const val DATE = "date"
+            const val BY = "by"
         }
     }
 }

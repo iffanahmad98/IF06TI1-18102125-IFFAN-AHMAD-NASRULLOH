@@ -69,6 +69,8 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
                 binding.edtTitle.setText(it.title)
                 binding.edtDescription.setText(it.description)
                 binding.edtCategory.setSelection(it.category!!.toInt())
+                binding.edtTahun.setText(it.tahun)
+                binding.edtBy.setText(it.by)
             }!!
         } else {
             actionBarTitle = "Tambah"
@@ -84,6 +86,8 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
         if (view.id == R.id.btn_submit) {
             val title = binding.edtTitle.text.toString().trim()
             val description = binding.edtDescription.text.toString().trim()
+            val tahun = binding.edtTahun.text.toString().trim()
+            val by = binding.edtBy.text.toString().trim()
             if (title.isEmpty()) {
                 binding.edtTitle.error = "Field can not be blank"
                 return
@@ -91,6 +95,8 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
             quote?.title = title
             quote?.description = description
             quote?.category = category
+            quote?.by = by
+            quote?.tahun = tahun
             val intent = Intent()
             intent.putExtra(EXTRA_QUOTE, quote)
             intent.putExtra(EXTRA_POSITION, position)
@@ -98,6 +104,8 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
             values.put(DatabaseContract.QuoteColumns.TITLE, title)
             values.put(DatabaseContract.QuoteColumns.DESCRIPTION, description)
             values.put(DatabaseContract.QuoteColumns.CATEGORY, category)
+            values.put(DatabaseContract.QuoteColumns.BY, by)
+            values.put(DatabaseContract.QuoteColumns.TAHUN, tahun)
             if (isEdit) {
                 val result = quoteHelper.update(quote?.id.toString(),
                     values).toLong()

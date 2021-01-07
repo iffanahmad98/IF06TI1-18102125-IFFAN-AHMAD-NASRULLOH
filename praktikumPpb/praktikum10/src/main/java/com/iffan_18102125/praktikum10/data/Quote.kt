@@ -9,5 +9,7 @@ data class Quote(
     var title: String? = null,
     var description: String? = null,
     var category: String? = null,
-    var date: String? = null
+    var tahun: String? = null,
+    var date: String? = null,
+    var by: String? = null
 ) : Parcelable
