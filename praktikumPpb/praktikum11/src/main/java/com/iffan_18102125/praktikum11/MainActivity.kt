@@ -2,10 +2,13 @@ package com.iffan_18102125.praktikum11
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.iffan_18102125.praktikum11.databinding.ActivityMainBinding
@@ -29,6 +32,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intent)
             finish()
         }
+        else{
+            updateUI(currentUser)
+        }
 
     }
 
@@ -39,6 +45,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val intent = Intent(this@MainActivity, SignInActivity::class.java)
             startActivity(intent)
             finish()
+        }
+        else{
+            updateUI(currentUser)
         }
     }
 
@@ -79,6 +88,32 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             finish()
         }
     }
+    private fun updateUI(currentUser: FirebaseUser) {
+        currentUser?.let {
+            val name = currentUser.displayName
+            val phoneNumber = currentUser.phoneNumber
+            val email = currentUser.email
+            val photoUrl = currentUser.photoUrl
+            val emailVerified = currentUser.isEmailVerified
+            val uid = currentUser.uid
+            binding.tvName.text = name
+            if(TextUtils.isEmpty(name)){
+                binding.tvName.text = "No Name"
+            }
+            binding.tvUserId.text = email
+            for (profile in it.providerData) {
+                val providerId = profile.providerId
+                if(providerId=="password" && emailVerified==true){
+                    binding.btnEmailVerify.isVisible = false
+                }
+                if(providerId=="phone"){
+                    binding.tvName.text = phoneNumber
+                    binding.tvUserId.text = providerId
+                }
+            }
+        }
+    }
+
 
 
 }
