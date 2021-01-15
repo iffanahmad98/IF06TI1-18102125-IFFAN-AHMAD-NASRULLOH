@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import com.bumptech.glide.Glide
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -121,6 +122,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     binding.tvName.text = phoneNumber
                     binding.tvUserId.text = providerId
                 }
+            }
+            if(photoUrl !== null){
+                Glide.with(this)
+                    .load(photoUrl)
+                    .into(binding.ivImage)
             }
         }
     }
