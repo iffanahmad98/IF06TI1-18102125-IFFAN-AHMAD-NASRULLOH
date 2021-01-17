@@ -7,6 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.iffan_18102125.praktikum11.data.Quote
+import com.iffan_18102125.praktikum11.helper.EXTRA_POSITION
+import com.iffan_18102125.praktikum11.helper.EXTRA_QUOTE
+import com.iffan_18102125.praktikum11.helper.REQUEST_UPDATE
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
