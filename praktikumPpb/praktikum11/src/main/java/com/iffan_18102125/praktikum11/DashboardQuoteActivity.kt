@@ -14,6 +14,7 @@ import com.iffan_18102125.praktikum11.helper.REQUEST_UPDATE
 import com.iffan_18102125.praktikum11.helper.RESULT_ADD
 import com.iffan_18102125.praktikum11.helper.RESULT_DELETE
 import com.iffan_18102125.praktikum11.helper.RESULT_UPDATE
+import kotlinx.android.synthetic.main.activity_dashboard_quote.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
