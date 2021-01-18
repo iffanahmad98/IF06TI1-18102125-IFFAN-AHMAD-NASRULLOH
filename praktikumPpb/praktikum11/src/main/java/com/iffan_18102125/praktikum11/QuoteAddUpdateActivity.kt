@@ -1,6 +1,8 @@
 package com.iffan_18102125.praktikum11
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -22,6 +24,8 @@ import com.iffan_18102125.praktikum11.helper.ALERT_DIALOG_DELETE
 import com.iffan_18102125.praktikum11.helper.EXTRA_POSITION
 import com.iffan_18102125.praktikum11.helper.EXTRA_QUOTE
 import com.iffan_18102125.praktikum11.helper.RESULT_ADD
+import com.iffan_18102125.praktikum11.helper.RESULT_DELETE
+import com.iffan_18102125.praktikum11.helper.RESULT_UPDATE
 import kotlinx.android.synthetic.main.activity_dashboard_quote.*
 
 class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
@@ -121,7 +125,23 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
                 return
             }
             if (isEdit) {
-
+                val currentUser = auth.currentUser
+                val user = hashMapOf(
+                    "uid" to currentUser?.uid,
+                    "title" to title,
+                    "description" to description,
+                    "category" to categoryName,
+                    "date" to FieldValue.serverTimestamp()
+                )
+                firestore.collection("quotes").document(quote?.id.toString())
+                    .set(user)
+                    .addOnSuccessListener {
+                        setResult(RESULT_UPDATE, intent)
+                        finish()
+                    }
+                    .addOnFailureListener { e ->
+                        Toast.makeText(this@QuoteAddUpdateActivity, "Gagal mengupdate data", Toast.LENGTH_SHORT).show()
+                    }
             } else {
                 val currentUser = auth.currentUser
                 val user = hashMapOf(
@@ -183,6 +203,19 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
                 if (isDialogClose) {
                     finish()
                 } else {
+                    firestore.collection("quotes").document(quote?.id.toString())
+                        .delete()
+                        .addOnSuccessListener {
+                            Log.d("delete", "DocumentSnapshot successfully deleted!"+quote?.id.toString())
+                                val intent = Intent()
+                            intent.putExtra(EXTRA_POSITION, position)
+                            setResult(RESULT_DELETE, intent)
+                            finish()
+                        }
+                        .addOnFailureListener { e ->
+                            Log.w("a", "Error deleting document", e)
+                            Toast.makeText(this@QuoteAddUpdateActivity, "Gagal menghapus data", Toast.LENGTH_SHORT).show()
+                        }
 
                 }
             }
