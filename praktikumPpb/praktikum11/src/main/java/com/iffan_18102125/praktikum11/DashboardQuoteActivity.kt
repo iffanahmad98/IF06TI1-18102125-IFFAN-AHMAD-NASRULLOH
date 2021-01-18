@@ -6,6 +6,8 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.iffan_18102125.praktikum11.adapter.QuoteAdapter
 import com.iffan_18102125.praktikum11.data.Quote
 import com.iffan_18102125.praktikum11.databinding.ActivityDashboardQuoteBinding
@@ -22,6 +24,9 @@ import kotlinx.coroutines.launch
 class DashboardQuoteActivity : AppCompatActivity() {
     private lateinit var adapter: QuoteAdapter
     private lateinit var binding: ActivityDashboardQuoteBinding
+    private lateinit var auth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
