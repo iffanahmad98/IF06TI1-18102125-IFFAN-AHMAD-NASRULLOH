@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1022449514143",
+    "project_id": "fir-ppb2021-4eab1",
+    "storage_bucket": "fir-ppb2021-4eab1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022449514143:android:724a050d1822f1b7a494aa",
+        "android_client_info": {
+          "package_name": "com.iffan_18102125.praktikum11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022449514143-71fo7un3lmne1j112smogsfd4vcfmi8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iffan_18102125.praktikum11",
+            "certificate_hash": "003b3de81f0a385aa191e3b2102009b6927e4a2f"
+          }
+        },
+        {
+          "client_id": "1022449514143-ucv0of2egmclk1ok75o4l7u7id97opij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDayh8AjkIzNAP7wVN6RVieWf8xl40spyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022449514143-ucv0of2egmclk1ok75o4l7u7id97opij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

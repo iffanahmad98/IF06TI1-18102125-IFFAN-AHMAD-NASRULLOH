@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Firebase</string>
+    <string name="delete">Delete</string>
+    <string name="title">Tittle</string>
+    <string name="category">Category</string>
+    <string name="description">Deskripsi</string>
+    <string name="date">Tahun</string>
+    <string name="submit">Submit</string>
+</resources>
