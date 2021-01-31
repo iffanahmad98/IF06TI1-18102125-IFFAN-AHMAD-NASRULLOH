@@ -1,4 +1,4 @@
-package com.iffan_18102125.praktikum14.ui.dashboard
+package com.iffan_18102125.praktikum14.ui.classquotes
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
