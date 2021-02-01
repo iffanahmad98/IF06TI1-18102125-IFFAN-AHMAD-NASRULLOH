@@ -8,6 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
+        buildConfigField "String", "BASE_URL", "\"https://quotes.informatika.app/\""
         applicationId "com.iffan_18102125.praktikum14"
         minSdkVersion 21
         targetSdkVersion 30
