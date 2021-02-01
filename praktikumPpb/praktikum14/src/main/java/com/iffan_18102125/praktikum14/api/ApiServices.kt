@@ -1,4 +1,4 @@
-package com.iffan_18102125.praktikum14
+package com.iffan_18102125.praktikum14.api
 
 import com.iffan_18102125.praktikum14.model.Login
 import com.iffan_18102125.praktikum14.model.Message
