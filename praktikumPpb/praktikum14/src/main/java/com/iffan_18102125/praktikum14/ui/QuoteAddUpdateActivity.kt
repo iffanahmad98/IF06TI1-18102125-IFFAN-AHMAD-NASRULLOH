@@ -4,18 +4,24 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.iffan_18102125.praktikum14.CoroutineContextProvider
 import com.iffan_18102125.praktikum14.R
 import com.iffan_18102125.praktikum14.TokenPref
+import com.iffan_18102125.praktikum14.`interface`.MainView
+import com.iffan_18102125.praktikum14.api.MainPresenter
 import com.iffan_18102125.praktikum14.databinding.ActivityQuoteAddUpdateBinding
 import com.iffan_18102125.praktikum14.helper.ALERT_DIALOG_CLOSE
 import com.iffan_18102125.praktikum14.helper.ALERT_DIALOG_DELETE
 import com.iffan_18102125.praktikum14.helper.EXTRA_QUOTE
+import com.iffan_18102125.praktikum14.model.Login
 import com.iffan_18102125.praktikum14.model.Quote
 import com.iffan_18102125.praktikum14.model.Token
 
-class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
+class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener, MainView {
+    private lateinit var presenter: MainPresenter
     private var isEdit = false
     private var quote: Quote? = null
     private lateinit var binding: ActivityQuoteAddUpdateBinding
@@ -25,6 +31,7 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityQuoteAddUpdateBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        presenter = MainPresenter(this, CoroutineContextProvider())
         tokenPref = TokenPref(this)
         token = tokenPref.getToken()
         quote = intent.getParcelableExtra(EXTRA_QUOTE)
@@ -67,6 +74,12 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
             if (isEdit) {
 
             } else {
+                presenter.addQuote(
+                    token.token.toString(),
+                    binding.edtTitle.text.toString(),
+                    binding.edtDescription.text.toString()
+                )
+
 
             }
         }
@@ -112,5 +125,14 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
             .setNegativeButton("Tidak") { dialog, _ -> dialog.cancel() }
         val alertDialog = alertDialogBuilder.create()
         alertDialog.show()
+    }
+
+    override fun showMessage(messsage: String) {
+        Toast.makeText(this,messsage, Toast.LENGTH_SHORT).show()
+        finish()
+    }
+    override fun resultQuote(data: ArrayList<Quote>) {
+    }
+    override fun resultLogin(data: Login) {
     }
 }
