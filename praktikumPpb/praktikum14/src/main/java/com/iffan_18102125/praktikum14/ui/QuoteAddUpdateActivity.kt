@@ -1,7 +1,19 @@
 package com.iffan_18102125.praktikum14.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import com.iffan_18102125.praktikum14.R
+import com.iffan_18102125.praktikum14.TokenPref
+import com.iffan_18102125.praktikum14.databinding.ActivityQuoteAddUpdateBinding
+import com.iffan_18102125.praktikum14.helper.ALERT_DIALOG_CLOSE
+import com.iffan_18102125.praktikum14.helper.ALERT_DIALOG_DELETE
+import com.iffan_18102125.praktikum14.helper.EXTRA_QUOTE
+import com.iffan_18102125.praktikum14.model.Quote
+import com.iffan_18102125.praktikum14.model.Token
 
 class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
     private var isEdit = false
